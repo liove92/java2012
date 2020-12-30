@@ -40,7 +40,7 @@ public class QuizConditionalStmt {
 		   
 		
 		} // switch end
-
+      sc.close();
 	}//end main
 
 }//end class
