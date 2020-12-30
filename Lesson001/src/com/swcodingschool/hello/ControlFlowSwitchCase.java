@@ -47,4 +47,5 @@ public class ControlFlowSwitchCase {
 		System.out.println("컴퓨터는 " + comGame + " : " + winner + " 승~!!");
 		sc.close();
 	}// end of main
+	
 }// end of class

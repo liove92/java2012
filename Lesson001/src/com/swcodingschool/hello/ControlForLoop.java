@@ -3,9 +3,10 @@ package com.swcodingschool.hello;
 public class ControlForLoop {
 	public static void main(String [] args) {
 		// 단일 for
+		int a = 0;
 		for(int number = 0; number < 10; number++) {
 			System.out.printf("%4d",number);
-		}// end of for
+		}// end of fornumber
 		System.out.println();
 		
 		// 다중 for
