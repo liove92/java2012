@@ -13,26 +13,34 @@ public class QuizConditionalStmt {
 		
 		{
 		if (S >= 90) {
-			System.out.printf("당신의 성적은 A입니다.\n");
+			System.out.println("당신의 성적은 A입니다.\n");
 		}else if (S >= 80) {
-			System.out.printf("당신의 성적은 B입니다.\n");
+			System.out.println("당신의 성적은 B입니다.\n");
 		}else if (S >= 70) {
-			System.out.printf("당신의 성적은 C입니다.\n");
+			System.out.println("당신의 성적은 C입니다.\n");
 		}else {
-			System.out.printf("당신의 성적은 F입니다.\n");
+			System.out.println("당신의 성적은 F입니다.\n");
 		}
 		} // if end
 		
 		
-		switch(S) {
-		case 1:
-		if(S >= 90) System.out.printf("당신의 성적은 A입니다.\n");
-		else if (S >= 80) System.out.printf("당신의 성적은 B입니다.\n");
-		else if (S >= 70) System.out.printf("당신의 성적은 C입니다.\n");
-		else System.out.printf("당신의 성적은 F입니다.\n");
+		switch(S/10) {
+		case 10: case 9:
+		System.out.println("당신의 성적은 A입니다.\n"); 
 		break;
-		}
+		case 8:
+			System.out.println("당신의 성적은 B입니다.\n");
+			break;
+		case 7:
+			System.out.println("당신의 성적은 C입니다.\n");
+			break;
+		default :
+			System.out.println("당신의 성적은 F입니다.\n");
+			break;
+		   
+		
+		} // switch end
 
-	}
+	}//end main
 
-}
+}//end class
